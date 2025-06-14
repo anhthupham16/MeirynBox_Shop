@@ -37,20 +37,22 @@ npm start
 Die Anwendung wird in Ihrem Browser unter `http://localhost:3000` geöffnet.
 
 ## Projektstruktur
-ecommerce-project/
-├── public/        # Bilder, Symbole usw.
-├── src/
-│ ├── components/  # Wiederverwendbare UI-Komponenten (Header, Footer, Produktkarte)
-│ ├── pages/       # Hauptanwendungsseiten (Startseite, Warenkorbseite, Produktdetailseite)
-│ ├── assets/      # Logo
-│ ├── styles/      # Globales CSS
-│ ├── App.js       # Root-Komponente und Router-Setup
-│ ├── index.js     # Einstiegspunkt
-│ └── ...
-├── .gitignore
-├── package.json
-├── README.md      # Diese Datei
-└── ...
+'''
+    ecommerce-project/
+    ├── public/        # Bilder, Symbole usw.
+    ├── src/
+    │ ├── components/  # Wiederverwendbare UI-Komponenten (Header, Footer, Produktkarte)
+    │ ├── pages/       # Hauptanwendungsseiten (Startseite, Warenkorbseite, Produktdetailseite)
+    │ ├── assets/      # Logo
+    │ ├── styles/      # Globales CSS
+    │ ├── App.js       # Root-Komponente und Router-Setup
+    │ ├── index.js     # Einstiegspunkt
+    │ └── ...
+    ├── .gitignore
+    ├── package.json
+    ├── README.md      # Diese Datei
+    └── ...
+'''
 
 ## Zukünftige Verbesserungen
 – Benutzerauthentifizierung und -autorisierung.
