@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import MascotImage from '../assets/Mascot KV 1.png';
 import '../styles/ProductDetailPage.css';
+// Import Bilder aus assets
+import produkt1Img from '../assets/produkt1.jpg';
+import produkt2Img from '../assets/produkt2.jpg';
+import produkt3Img from '../assets/produkt3.jpg';
+import produkt4Img from '../assets/produkt4.jpg';
+import produkt5Img from '../assets/produkt5.jpg';
+
 
 // Produktdaten (muss mit der ID von der Homepage übereinstimmen)
 const productsData = [
-  { id: 1, name: 'Schlüsselanhänger', price: 5, description: 'Anime-Charakter-Schlüsselanhänger.', image: 'https://via.placeholder.com/400/0000FF/808080?text=Laptop' },
-  { id: 2, name: 'Karte', price: 5, description: 'Anime-Charakter-Karte mit abgerundeten Ecken.', image: 'https://via.placeholder.com/400/FF0000/FFFFFF?text=Smartphone' },
-  { id: 3, name: 'Figur', price: 9, description: 'Anime-Charakter-Aufsteller aus Acrylkunststoff für den Schreibtisch.', image: 'https://via.placeholder.com/400/00FF00/000000?text=Headphones' },
-  { id: 4, name: 'ArtPlakat', price: 4, description:'Anime-Charakter-Bildplakat', image: 'https://via.placeholder.com/150/00FF00/000000?text=Headphones' },
+  { id: 1, name: 'Schlüsselanhänger', price: 5, description: 'Anime-Charakter-Schlüsselanhänger.', image: produkt1Img },
+  { id: 2, name: 'Karte', price: 5, description: 'Anime-Charakter-Karte mit abgerundeten Ecken.', image: produkt2Img },
+  { id: 3, name: 'Figur', price: 9, description: 'Anime-Charakter-Aufsteller aus Acrylkunststoff für den Schreibtisch.', image: produkt3Img },
+  { id: 4, name: 'ArtPlakat', price: 4, description:'Anime-Charakter-Bildplakat', image: produkt4Img },
+  { id: 5, name: 'Sticker', price: 3, description:'Anime-Charakter-Sticker', image: produkt5Img },
 ];
 
 
@@ -47,10 +54,9 @@ function ProductDetailPage() {
       <img src={product.image} alt={product.name} className="product-image" />
       <div className="product-info">
         <h1>{product.name}</h1>
-        <p className="product-price">${product.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })}</p>
+        <p className="product-price">{product.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })}</p>
         <p className="product-description">{product.description}</p>
         <button onClick={handleAddToCart}>in den Warenkorb legen</button>
-        <img src={MascotImage} alt="Mascot" className="product-card-mascot" />
       </div>
     </div>
   );

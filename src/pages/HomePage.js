@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
 import '../styles/HomePage.css';
+// Import Bilder aus assets
+import produkt1Img from '../assets/produkt1.jpg';
+import produkt2Img from '../assets/produkt2.jpg';
+import produkt3Img from '../assets/produkt3.jpg';
+import produkt4Img from '../assets/produkt4.jpg';
+import produkt5Img from '../assets/produkt5.jpg';
 
 // Produktdaten
 const initialProducts = [
-  { id: 1, name: 'Schlüsselanhänger', price: 5, image: 'https://via.placeholder.com/150/0000FF/808080?text=Laptop' },
-  { id: 2, name: 'Karte', price: 5, image: 'https://via.placeholder.com/150/FF0000/FFFFFF?text=Smartphone' },
-  { id: 3, name: 'Figur', price: 9, image: 'https://via.placeholder.com/150/00FF00/000000?text=Headphones' },
-  { id: 4, name: 'ArtPlakat', price: 4, image: 'https://via.placeholder.com/150/00FF00/000000?text=Headphones' },
+  { id: 1, name: 'Schlüsselanhänger', price: 5, image: produkt1Img },
+  { id: 2, name: 'Karte', price: 5, image: produkt2Img },
+  { id: 3, name: 'Figur', price: 9, image: produkt3Img },
+  { id: 4, name: 'ArtPlakat', price: 4, image: produkt4Img },
+  { id: 5, name: 'Sticker', price: 3, image: produkt5Img },
   // Hier werden andere Produkte hinzugefügt
 ];
 

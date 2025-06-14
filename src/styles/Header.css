@@ -1,6 +1,6 @@
 .header {
-    background-color: #333;
-    color: white;
+    background-color: #F8A2CA;
+    color: black;
     padding: 1rem;
 }
 
@@ -34,8 +34,9 @@
 }
 
 .header ul li a {
-    color: white;
+    color: #E6408F;
     text-decoration: none;
+    font-weight: bold;
     font-size: 1rem;
 }
 
