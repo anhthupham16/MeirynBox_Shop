@@ -37,7 +37,7 @@ npm start
 Die Anwendung wird in Ihrem Browser unter `http://localhost:3000` geöffnet.
 
 ## Projektstruktur
-'''
+```
     ecommerce-project/
     ├── public/        # Bilder, Symbole usw.
     ├── src/
@@ -52,7 +52,7 @@ Die Anwendung wird in Ihrem Browser unter `http://localhost:3000` geöffnet.
     ├── package.json
     ├── README.md      # Diese Datei
     └── ...
-'''
+```
 
 ## Zukünftige Verbesserungen
 – Benutzerauthentifizierung und -autorisierung.
