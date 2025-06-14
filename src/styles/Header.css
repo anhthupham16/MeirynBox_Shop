@@ -1,0 +1,44 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header ul li a:hover {
+    text-decoration: underline;
+}
