@@ -1,4 +1,4 @@
-# Thu-Pham-Projekt
+# MeirynBox-Projekt
 
 ## Übersicht
 Dies ist eine kleine, als Projekt entwickelte React-E-Commerce-Anwendung, die wichtige React-Konzepte wie Komponenten, Statusverwaltung, Routing, Styling und lokalen Speicher demonstriert.

@@ -7,6 +7,7 @@ import produkt2Img from '../assets/produkt2.jpg';
 import produkt3Img from '../assets/produkt3.jpg';
 import produkt4Img from '../assets/produkt4.jpg';
 import produkt5Img from '../assets/produkt5.jpg';
+import mascot3Img from '../assets/Mascot3.png';
 
 
 // Produktdaten (muss mit der ID von der Homepage übereinstimmen)
@@ -57,6 +58,11 @@ function ProductDetailPage() {
         <p className="product-price">{product.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })}</p>
         <p className="product-description">{product.description}</p>
         <button onClick={handleAddToCart}>in den Warenkorb legen</button>
+        <img
+          src={mascot3Img}
+          alt="Meiryn"
+          className="product-detail-mascot3"
+        />
       </div>
     </div>
   );

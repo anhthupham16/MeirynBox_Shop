@@ -58,14 +58,14 @@
     background-color: #0056b3;
 }
 
-/* .product-detail-mascot {
-    position: fixed; 
-    bottom: 20px;    
-    right: 20px;     
-    width: 80px;     
+.product-detail-mascot3 {
+    position: absolute;
+    top: 270px;
+    right: 120px;    
+    width: 250px;   
     height: auto;
-    z-index: 1000;   
-} */
+    z-index: 1000;  
+}
 
 /* Responsive anpassen */
 @media (min-width: 768px) {

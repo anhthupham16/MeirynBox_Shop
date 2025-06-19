@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/CartPage.css';
+// Import Bilder aus assets
+import mascot1Img from '../assets/Mascot1.png';
 
 function CartPage() {
   const [cartItems, setCartItems] = useState(() => {
@@ -44,9 +46,15 @@ function CartPage() {
   };
 
   return (
-    <div className="cart-page">
+    <div className="cart-page"> 
+    {/* alle muss in eine div tag sein, return kann nur eine Komponent render */}
+      {/* Đây là cách bạn thêm thẻ <img> cho mascot */}
+      <img
+        src={mascot1Img} // Sử dụng biến bạn đã import
+        alt="Meiryn"     // Luôn luôn có alt text
+        className="product-detail-mascot1" // Thêm class để áp dụng CSS bạn đã định nghĩa
+      />
       <h1>Ihr Warenkorb</h1>
-
       {cartItems.length === 0 ? (
         <p>Ihr Warenkorb ist leer. <Link to="/">Jetzt einkaufen!</Link></p>
       ) : (

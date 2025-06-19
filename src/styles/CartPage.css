@@ -3,6 +3,16 @@
     padding: 2rem;
     max-width: 900px;
     margin: 2rem auto;
+    position: relative;
+}
+
+.product-detail-mascot1 {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 300px;   
+    height: auto;
+    z-index: 1000;
 }
 
 .cart-page h1 {
@@ -146,6 +156,15 @@
 }
 
 /* Responsive anpassen */
+/* Laptop Bildschrim */
+@media (max-width: 900px) { /* Nếu max-width của cart-page là 900px, có thể dùng breakpoint này */
+    .product-detail-mascot1 {
+        width: 150px; /* Giảm kích thước mascot */
+        right: 15px; /* Giữ nó gần mép phải hơn */
+        top: 15px;   /* Giữ nó gần mép trên hơn */
+    }
+}
+/* Mobile Bildschrim */
 @media (max-width: 768px) {
     .cart-item {
         flex-direction: column;
@@ -158,5 +177,10 @@
     }
     .cart-item .item-details {
         width: 100%;
+    }
+    .product-detail-mascot1 {
+        width: 100px; /* Giảm kích thước nhiều hơn cho mobile */
+        top: 10px; /* Đặt gần mép trên hơn */
+        right: 10px; /* Đặt gần mép phải hơn */
     }
 }
