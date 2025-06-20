@@ -21,7 +21,7 @@ Dies ist eine kleine, als Projekt entwickelte React-E-Commerce-Anwendung, die wi
 ## Lokale Ausführung
 1. **Repository klonen:**
 ```bash
-git clone <https://github.com/anhthupham16/MeirynBox_Shop.git>
+git clone https://github.com/anhthupham16/MeirynBox_Shop.git
 ```
 2. **Abhängigkeiten installieren:**
 ```bash
